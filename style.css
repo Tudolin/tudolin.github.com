@@ -91,6 +91,10 @@ section h2 {
     margin-right: 8px;
 }
 
+.sobre a:hover {
+    opacity: 0,5;
+}
+
 .sobre #sobre {}
 
 .sobre a:hover {
