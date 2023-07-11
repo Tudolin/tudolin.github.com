@@ -143,3 +143,8 @@ footer {
         padding: 10px;
     }
 }
+
+@font-face {
+  font-family: 'Peace Sans';
+  src: url('/Peace-Sans-Webfont.ttf') format('truetype');
+}
