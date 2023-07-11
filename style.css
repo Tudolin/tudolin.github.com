@@ -48,6 +48,14 @@ section {
     max-width: 100vh;
 }
 
+section a{
+    text-decoration: none;
+    padding: 2px;
+    color: #FFF;
+    background-color: #757575;
+    border-radius: 2px;
+}
+
 section h2 {
     margin-top: 0;
 }
