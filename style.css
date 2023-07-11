@@ -86,6 +86,10 @@ section h2 {
     line-height: 2px;
 }
 
+.sobre #tec {
+    float:right;
+}
+
 .sobre a {
     float: right;
     padding: 2px;
