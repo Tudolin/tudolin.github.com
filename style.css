@@ -2,10 +2,6 @@
     max-width: 100%;
 }
 
-@font-face {
-  font-family: 'Peace Sans';
-  src: url('/Peace Sans Webfont.ttf') format('truetype');
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
