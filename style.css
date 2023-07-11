@@ -1,3 +1,7 @@
+* {
+    max-width: 100%;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -5,8 +9,7 @@ body {
     background: rgb(78, 61, 77);
     background: radial-gradient(circle, rgba(78, 61, 77, 1) 0%, rgba(0, 0, 0, 1) 76%);
     color: #fff;
-    max-width: 80vh;
-    min-width:fit-content;
+    max-width: 100%;
 }
 
 header {
@@ -54,7 +57,7 @@ section h2 {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    margin-left: 33%;
+    margin-left: 0%;
     margin-top: 100px;
 }
 
@@ -68,16 +71,16 @@ section h2 {
 }
 
 .sobre p {
-    margin-left: 100px;
+
     font-weight: bold;
-    margin: -2px;
-    left: 0;
+    margin-left: 25px;
+    line-height: 2px;
 }
 
 .sobre a {
     float: right;
     padding: 2px;
-    margin-right: 10px;
+    margin-right: 8px;
 }
 
 .sobre #sobre {}
@@ -90,7 +93,7 @@ footer {
     color: #fff;
     padding: 20px;
     text-align: center;
-    margin-left: 36%;
+
 }
 
 @media (max-width: 600px) {
