@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #757575;
+    background-color: #7575755b;
 }
 
 section {
@@ -82,12 +82,13 @@ section h2 {
 .sobre p {
 
     font-weight: bold;
-    margin-left: 25px;
+    margin-left: 64px;
     line-height: 2px;
 }
 
 .sobre #tec {
     float:right;
+    margin-right: 64px;
 }
 
 .sobre a {
@@ -99,8 +100,6 @@ section h2 {
 .sobre a:hover {
     opacity: 0,5;
 }
-
-.sobre #sobre {}
 
 .sobre a:hover {
     opacity: 0.5;
