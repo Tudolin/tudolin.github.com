@@ -6,7 +6,6 @@ body a:hover {
     opacity: 0.5;
 }
 
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -53,7 +52,7 @@ section {
     max-width: 100vh;
 }
 
-section a{
+section a {
     text-decoration: none;
     padding: 2px;
     color: #FFF;
@@ -76,7 +75,7 @@ section h2 {
 
 .sobre h1 {
     font-family: 'Peace Sans', sans-serif;
-    font-weight:900;
+    font-weight: 900;
     letter-spacing: -6px;
     font-size: 8em;
     text-align: center;
@@ -94,7 +93,7 @@ section h2 {
 }
 
 .sobre #tec {
-    float:right;
+    float: right;
     margin-right: 64px;
 }
 
@@ -147,6 +146,6 @@ footer {
 }
 
 @font-face {
-  font-family: 'Peace Sans';
-  src: url('/Peace-Sans-Webfont.ttf') format('truetype');
+    font-family: 'Peace Sans';
+    src: url('/Peace-Sans-Webfont.ttf') format('truetype');
 }
