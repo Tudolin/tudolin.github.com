@@ -2,6 +2,10 @@
     max-width: 100%;
 }
 
+body a:hover {
+    opacity: 0.5;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -71,19 +75,21 @@ section h2 {
 
 .sobre h1 {
     font-family: 'Peace Sans', sans-serif;
-    font-weight: bolder;
+    font-weight:900;
     letter-spacing: -6px;
-    font-size: 6em;
+    font-size: 8em;
     text-align: center;
     margin: -5px;
     line-height: 84px;
 }
 
 .sobre p {
-
     font-weight: bold;
     margin-left: 64px;
-    line-height: 2px;
+    margin-bottom: 12px;
+    line-height: 1;
+    word-wrap: break-word;
+    max-width: 400px;
 }
 
 .sobre #tec {
@@ -93,16 +99,8 @@ section h2 {
 
 .sobre a {
     float: right;
-    padding: 2px;
+    margin-top: 20px;
     margin-right: 8px;
-}
-
-.sobre a:hover {
-    opacity: 0,5;
-}
-
-.sobre a:hover {
-    opacity: 0.5;
 }
 
 footer {
