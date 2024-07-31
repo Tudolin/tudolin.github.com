@@ -2,201 +2,346 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" href="./favicon.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="pragma" content="no-cache" />
-    <meta name="author" content="Rafael Nadalin">
-    <meta name="description"
-        content="Meu portfolio profissional de Engenharia de Dados">
-    <meta name="keywords"
-        content="portfolio, ciencia de dados, engenharia de dados, analista de dados, data, data-science">
-    <title>Rafael Nadalin - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Portfólio de Rafael Nadalin</title>
+    <link rel="icon" href="./favicon.png" type="image/png">
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre mim">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-                <li><a href="#experiencias">Experiências</a></li>
-            </ul>
+    <header class="bg-dark text-white py-3">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="logo-w.png" width="120"
+                    alt="Logo Safe7" style="hover:opacity 70%"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link"
+                            href="#projetos">Projetos</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="#experiencias">Experiências</a></li>
+                    <li class="nav-item"><a class="nav-link"
+                            href="#contato">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <div class="sobre">
-        <p>Olá, me chamo Rafael Nadalin, tenho 21 anos atualmente no 5º período
-            de Analise e Desenvolvimento de Sistemas, e esse é meu portifólio de</p>
-        <h1>ENGENHARIA DE DADOS</h1>
-        <p id="tec">Python | SQL | GCP | PySpark | BigQuerry | API Rest</p>
-        <a href="https://github.com/Tudolin" target="_blank"><img
-                src="/git-logo.png" width="60px"></a>
-        <a href="https://www.linkedin.com/in/rafael-nadalin-68166722a/"
-            target="_blank"><img src="/linkedin-logo.png" width="60px"></a>
+    <div class="container fade-in" data-aos="fade-up">
+        <div class="sobre">
+            <p>Olá, me chamo Rafael Nadalin, tenho 21 anos formado em Análise e
+                Desenvolvimento de Sistemas, e esse é meu portfólio de</p>
+            <h1>ENGENHARIA DE DADOS</h1>
+            <div class="skills">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>GCP</span>
+                <span>PySpark</span>
+                <span>MongoDB</span>
+                <span>Flask</span>
+                <span>Pandas</span>
+                <span>Scipy</span>
+                <span>GitHub Actions</span>
+                <a href="https://www.linkedin.com/in/rafael-nadalin-68166722a/"><img
+                        src="linkedin-logo.png" alt="LinkedIn" class="icon"
+                        width="60px"></a>
+                <a href="https://github.com/Tudolin"><img src="git-logo.png"
+                        alt="GitHub" class="icon" width="60px"></a>
+            </div>
+        </div>
+        <section id="projetos" class="section projects" data-aos="fade-up">
+            <h2 class="section-title">Projetos <span>.</span></h2>
+            <div class="project">
+                <div class="project-info">
+                    <h3 class="project-title">ETL - Youtube Data Pipeline</h3>
+                    <p>Introdução:
+                        <br><br>
+                        Esse projeto tem o objetivo de realizar a
+                        extração, transformação e o carregamento de dados, estes
+                        extraidos do seu própio canal. Pra isto, utilizei a
+                        Youtube
+                        Analytics API e Google Cloud Console.
+                        <br><br>
+                        Objetivo do projeto:
+                        <br><br>
+                        Este projeto tem como objetivo a prática e o estudo de
+                        requisições em API, métodos de autenticação e construção
+                        de
+                        ETL.
+                        <br><br>
+                        Processo de Desenvolvimento:
+                        <br><br>
+                        Ao longo do projeto, tive como principais desafios a
+                        criação de
+                        um fluxo de autenticação para com a API do Youtube
+                        Analytics e a
+                        conta google. E tabém a criação de um fluxo de extração,
+                        pré
+                        padronização e salvamento dos dados por período
+                        (dias).<br>
+                        Foram utilizadas durante o desenvolvimento destre
+                        projeto
+                        algumas técnicas e tecnologias, foram estas o Python,
+                        GCP
+                        (Google Cloud Platform), Youtube Analytics API v2,
+                        Programação
+                        Orientada a objetos, RestAPI.<br>
+                        <br><br>
+                        Conclusão:
+                        <br><br>
+                        Graças a este projeto consegui compreender melhor o
+                        processo de autenticação Oauth2 e sobre o funcionamento
+                        de APIs para a extração de relatórios.
+                        <br>
+                        Pretendo futuramente adicionar novos conectore para a
+                        extração, também adicionar o AirFlow e subir na cloud
+                        para que seja executado de uma maneira independente no
+                        serviço de Computação em nuvem (GCP).
+                        <br><br>
+                    </p>
+                    <a href="https://github.com/Tudolin/gcp-pipeline"
+                        target="_blank" class="project-link">Link do código</a>
+                </div>
+            </div>
+            <div class="project" data-aos="fade-up">
+                <div class="project-info">
+                    <h3 class="project-title">Mesclagem de PDF's utilizando
+                        requisição HTTP's</h3>
+                    <p>Introdução:
+                        <br><br>
+                        Neste projeto, desenvolvemos uma aplicação web para
+                        mesclar
+                        arquivos PDF de forma eficiente e prática. A seguir,
+                        detalhamos
+                        o processo:
+                        <br><br>
+                        Objetivo do Projeto:
+                        <br><br>
+                        O objetivo principal deste projeto era criar uma
+                        aplicação da
+                        web que permitisse aos usuários mesclar múltiplos
+                        arquivos PDF
+                        em um único arquivo consolidado. A aplicação foi
+                        desenvolvida
+                        com a finalidade de fornecer uma solução fácil e rápida
+                        para a
+                        mesclagem de PDFs.
+                        <br><br>
+                        Processo de Desenvolvimento:
+                        <br><br>
+                        Configuração do Ambiente:
+                        Iniciamos configurando um ambiente de desenvolvimento
+                        que
+                        incluiu o uso do framework Flask para criação da
+                        aplicação web.
+                        Além disso, utilizamos bibliotecas Python, como PyPDF2,
+                        para
+                        processamento de PDF.
+                        <br><br>
+                        Interface do Usuário:
+                        Desenvolvemos uma interface do usuário amigável
+                        utilizando HTML,
+                        CSS e Bootstrap. Essa interface permitiu que os usuários
+                        interagissem com a aplicação de maneira simples e
+                        intuitiva. Os
+                        elementos da interface foram projetados de forma a
+                        proporcionar
+                        uma experiência de usuário fluida.
+                        <br><br>
+                        Validação de Arquivos de Entrada:
+                        Implementamos validações para garantir que os arquivos
+                        de
+                        entrada fossem de fato arquivos PDF. Também limitamos o
+                        número
+                        de arquivos a serem mesclados, permitindo de 2 a 7
+                        arquivos, com
+                        o objetivo de manter a qualidade do resultado. Essas
+                        validações
+                        foram aplicadas para garantir a integridade dos
+                        processos.
+                        <br><br>
+                        Mesclagem de PDFs:
+                        Utilizamos a biblioteca PyPDF2 para mesclar os arquivos
+                        PDF
+                        selecionados. Isso envolveu a extração de páginas de
+                        cada
+                        arquivo e a criação de um único arquivo PDF consolidado.
+                        O
+                        processo de mesclagem ocorreu no servidor, garantindo a
+                        segurança dos arquivos do usuário.
+                        <br><br>
+                        Requisições HTTP:
+                        A aplicação web utilizou requisições HTTP para interagir
+                        com o
+                        servidor. Quando os usuários selecionaram os arquivos
+                        PDF e um
+                        nome para o arquivo final, uma requisição POST foi
+                        enviada ao
+                        servidor, que processou os arquivos e forneceu o arquivo
+                        PDF
+                        mesclado para download. O processo de requisição e
+                        resposta foi
+                        implementado de forma eficaz, garantindo a usabilidade
+                        da
+                        aplicação.
+                        <br><br>
+                        Download do Arquivo Mesclado:
+                        Disponibilizamos a opção de download para que os
+                        usuários
+                        pudessem obter o arquivo PDF mesclado de forma simples.
+                        Após a
+                        mesclagem, o arquivo final foi disponibilizado como um
+                        link para
+                        download direto. Essa funcionalidade tornou o resultado
+                        final
+                        acessível aos usuários.
+                        <br><br>
+                        Conclusão:
+                        <br><br>
+                        Este projeto foi bem-sucedido em alcançar seus
+                        objetivos. Agora,
+                        os usuários podem facilmente mesclar vários arquivos PDF
+                        em um
+                        único arquivo com facilidade. A aplicação oferece uma
+                        interface
+                        de usuário intuitiva e eficaz, permitindo que a
+                        mesclagem de
+                        PDFs seja concluída com eficiência.
+                        <br><br>
+                        Além disso, este projeto destaca a aplicação de
+                        tecnologias da
+                        web e bibliotecas Python para resolver problemas
+                        práticos. A
+                        aplicação está pronta para uso e pode ser útil para
+                        profissionais e usuários que precisam consolidar
+                        documentos PDF
+                        de maneira rápida e simples.
+                        <br><br>
+                        No futuro, planejo aprimorar ainda mais a aplicação,
+                        adicionando recursos adicionais, como a capacidade de
+                        reorganizar páginas, para torná-la ainda mais versátil.
+                        Estamos
+                        abertos a contribuições e feedback da comunidade.
+                    </p>
+                    <a href="https://github.com/Tudolin/pdf-merger-app"
+                        target="_blank" class="project-link">Link do código</a>
+                    <a href="https://pdf-merger-app.onrender.com/"
+                        target="_blank" class="project-link">Link da
+                        aplicação</a>
+                </div>
+            </div>
+        </section>
+        <section id="sobre" class="section about" data-aos="fade-up">
+            <h2 class="section-title">Sobre <span>.</span></h2>
+            <p>Atualmente trabalhando na Safe7 Consultoria Ambiental
+                como Engenheiro de Dados JR</p>
+            <p>Formado como Analista de Sistemas, atualmente atuando como
+                Engenheiro de Dados focado em evoluir e me especializar em Cloud
+                Data Engineer.</p>
+            <p>💼 Ferramentas: Python, MySQL, MongoDB, GCP, Spark, Flask,
+                Pandas, Scipy, GitHub Actions.</p>
+            <p>🧳 Skils: Tratamento de dados, Rest API, Versionamento de código
+                (Git), CI/CD, Computação em nuvem, linux.</p>
+        </section>
+        <section id="experiencias" class="section experiences"
+            data-aos="fade-up">
+            <h2 class="section-title">Experiências <span>.</span></h2>
+            <div class="experience">
+                <div class="experience-info">
+                    <h3 class="experience-title">Mirum Agency - Estágiario em
+                        Engenharia de Dados</h3>
+                    <h4 class="duration">2023</h4>
+                    <p>Durante o período de estágio tive um grande aprendizado
+                        em:
+                        Manutenção e interpretação de códigos utilizados em
+                        ELT/ELT.</p>
+                    <p>Configuração e manuseio de diversos serviços cloud dentro
+                        da GCP.</p>
+                    <p>Criação de consultas e suporte SQL para auxiliar o time
+                        de BI.</p>
+                    <p>Desenvolvimento de endpoints utilizando Python utilizando
+                        a
+                        biblioteca Requests para a conexão com API's de veículos
+                        de mídia,
+                        tal como TikTok, Twitter, Pinterest, Google ADS.</p>
+                    <p>Auxiliar no suporte a clientes, manutenção e configuração
+                        de contas,
+                        monitoramento de serviços cloud e validação de
+                        integridade dos
+                        dados.</p>
+                </div>
+            </div>
+            <div class="experience">
+                <section id="experiencias" class="section experiences"
+                    data-aos="fade-up">
+                    <h2 class="section-title">Experiências <span>.</span></h2>
+                    <div class="experience">
+                        <div class="experience-info">
+                            <h3 class="experience-title">Mirum Agency -
+                                Estágiario em Engenharia de Dados</h3>
+                            <h4 class="duration">2023</h4>
+                            <p>Durante o período de estágio tive um grande
+                                aprendizado em:
+                                Manutenção e interpretação de códigos utilizados
+                                em ELT/ELT.</p>
+                            <p>Configuração e manuseio de diversos serviços
+                                cloud dentro da GCP.</p>
+                            <p>Criação de consultas e suporte SQL para auxiliar
+                                o time de BI.</p>
+                            <p>Desenvolvimento de endpoints utilizando Python
+                                utilizando a
+                                biblioteca Requests para a conexão com API's de
+                                veículos de mídia,
+                                tal como TikTok, Twitter, Pinterest, Google ADS.
+                            </p>
+                            <p>Auxiliar no suporte a clientes, manutenção e
+                                configuração de contas,
+                                monitoramento de serviços cloud e validação de
+                                integridade dos
+                                dados.</p>
+                        </div>
+                    </div>
+                    <div class="experience">
+                        <div class="experience-info">
+                            <h3 class="experience-title">Safe7 - Engenheiro de
+                                Dados JR</h3>
+                            <h4 class="duration">2024</h4>
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <section id="contato" class="section contact" data-aos="fade-up">
+            <h2 class="section-title">Contato <span>.</span></h2>
+            <p>Entre em contato comigo através do e-mail:
+                rafael.nadalin@outlook.com</p>
+            <p>ou do Celular: (41) 98413-5989</p>
+            <button class="btn btn-outline-info"><a
+                    href="/cv-rafael-nadalin.pdf" target="_blank"
+                    class="footer-link"
+                    style="text-decoration: none; color: white;">Currículo</a></button>
+        </section>
     </div>
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <h3>ETL - Youtube Data Pipeline</h3>
-            <p>Introdução: 
-              <br><br>
-                Esse projeto tem o objetivo de realizar a
-                extração, transformação e o carregamento de dados, estes
-                extraidos do seu própio canal. Pra isto, utilizei a Youtube
-                Analytics API e Google Cloud Console.
-                <br><br>
-                Objetivo do projeto:
-                <br><br>
-                Este projeto tem como objetivo a prática e o estudo de
-                requisições em API, métodos de autenticação e construção de
-                ETL.
-                <br><br>
-                Processo de Desenvolvimento:
-                <br><br>
-                Ao longo do projeto, tive como principais desafios a criação de
-                um fluxo de autenticação para com a API do Youtube Analytics e a
-                conta google. E tabém a criação de um fluxo de extração, pré
-                padronização e salvamento dos dados por período (dias).<br>
-                Foram utilizadas durante o desenvolvimento destre projeto
-                algumas técnicas e tecnologias, foram estas o Python, GCP
-                (Google Cloud Platform), Youtube Analytics API v2, Programação
-                Orientada a objetos, RestAPI.<br>
-                <br><br>
-                Conclusão:
-                <br><br>
-                Graças a este projeto consegui compreender melhor o processo de autenticação Oauth2 e sobre o funcionamento de APIs para a extração de relatórios.
-                <br>
-                Pretendo futuramente adicionar novos conectore para a extração, também adicionar o AirFlow e subir na cloud para que seja executado de uma maneira independente no serviço de Computação em nuvem (GCP).
-                <br><br>
-            </p>
-            <a href="https://github.com/Tudolin/gcp-pipeline"
-                target="_blank">Link do código</a><br><br>
-        </div>
-        </div>
-        <div class="projeto">
-            <h3>Mesclagem de PDF's utilizando requisição HTTP's</h3>
-            <p>Introdução:
-                <br><br>
-                Neste projeto, desenvolvemos uma aplicação web para mesclar
-                arquivos PDF de forma eficiente e prática. A seguir, detalhamos
-                o processo:
-                <br><br>
-                Objetivo do Projeto:
-                <br><br>
-                O objetivo principal deste projeto era criar uma aplicação da
-                web que permitisse aos usuários mesclar múltiplos arquivos PDF
-                em um único arquivo consolidado. A aplicação foi desenvolvida
-                com a finalidade de fornecer uma solução fácil e rápida para a
-                mesclagem de PDFs.
-                <br><br>
-                Processo de Desenvolvimento:
-                <br><br>
-                Configuração do Ambiente:
-                Iniciamos configurando um ambiente de desenvolvimento que
-                incluiu o uso do framework Flask para criação da aplicação web.
-                Além disso, utilizamos bibliotecas Python, como PyPDF2, para
-                processamento de PDF.
-                <br><br>
-                Interface do Usuário:
-                Desenvolvemos uma interface do usuário amigável utilizando HTML,
-                CSS e Bootstrap. Essa interface permitiu que os usuários
-                interagissem com a aplicação de maneira simples e intuitiva. Os
-                elementos da interface foram projetados de forma a proporcionar
-                uma experiência de usuário fluida.
-                <br><br>
-                Validação de Arquivos de Entrada:
-                Implementamos validações para garantir que os arquivos de
-                entrada fossem de fato arquivos PDF. Também limitamos o número
-                de arquivos a serem mesclados, permitindo de 2 a 7 arquivos, com
-                o objetivo de manter a qualidade do resultado. Essas validações
-                foram aplicadas para garantir a integridade dos processos.
-                <br><br>
-                Mesclagem de PDFs:
-                Utilizamos a biblioteca PyPDF2 para mesclar os arquivos PDF
-                selecionados. Isso envolveu a extração de páginas de cada
-                arquivo e a criação de um único arquivo PDF consolidado. O
-                processo de mesclagem ocorreu no servidor, garantindo a
-                segurança dos arquivos do usuário.
-                <br><br>
-                Requisições HTTP:
-                A aplicação web utilizou requisições HTTP para interagir com o
-                servidor. Quando os usuários selecionaram os arquivos PDF e um
-                nome para o arquivo final, uma requisição POST foi enviada ao
-                servidor, que processou os arquivos e forneceu o arquivo PDF
-                mesclado para download. O processo de requisição e resposta foi
-                implementado de forma eficaz, garantindo a usabilidade da
-                aplicação.
-                <br><br>
-                Download do Arquivo Mesclado:
-                Disponibilizamos a opção de download para que os usuários
-                pudessem obter o arquivo PDF mesclado de forma simples. Após a
-                mesclagem, o arquivo final foi disponibilizado como um link para
-                download direto. Essa funcionalidade tornou o resultado final
-                acessível aos usuários.
-                <br><br>
-                Conclusão:
-                <br><br>
-                Este projeto foi bem-sucedido em alcançar seus objetivos. Agora,
-                os usuários podem facilmente mesclar vários arquivos PDF em um
-                único arquivo com facilidade. A aplicação oferece uma interface
-                de usuário intuitiva e eficaz, permitindo que a mesclagem de
-                PDFs seja concluída com eficiência.
-                <br><br>
-                Além disso, este projeto destaca a aplicação de tecnologias da
-                web e bibliotecas Python para resolver problemas práticos. A
-                aplicação está pronta para uso e pode ser útil para
-                profissionais e usuários que precisam consolidar documentos PDF
-                de maneira rápida e simples.
-                <br><br>
-                No futuro, planejo aprimorar ainda mais a aplicação,
-                adicionando recursos adicionais, como a capacidade de
-                reorganizar páginas, para torná-la ainda mais versátil. Estamos
-                abertos a contribuições e feedback da comunidade.
-            </p>
-            <a href="https://github.com/Tudolin/pdf-merger-app"
-                target="_blank">Link do código</a>
-            <a href="https://pdf-merger-app.onrender.com/" target="_blank">Link
-                da aplicação</a>
-        </div>
-    </section>
-    <section id="sobre mim">
-        <h2>Sobre</h2>
-        <p>Tenho experiência no desenvolvimento Python de conectores utilizando
-            API REST para extrair dados (ETL e ELT) das plataformas e veículos
-            de midia como : </p>
-        <p>Tiktok, Twitter, Pinterest, etc.</p>
-        <p>Experiência em serviços cloud com enfase na GCP (Google Cloud
-            Platform), como : BigQuerry, Scheduler, Pub/Sub, Firestore,
-            Functions, VM, etc</p>
-        <h3>Técnologias:</h3>
-        <p>Git, Github, Docker, Python, MySQL, Scrum, Linux, Programação
-            orientada a objetos, Computação em nuvem</p>
-    </section>
-    <section id="experiencias">
-        <h2>Experiências</h2>
-        <h3>Mirum Agency - Estágiario em Engenharia de Dados</h3>
-        <h4>Período - 08/2023 até 12/2023</h4>
-        <p>Durante o período de estágio tive um grande aprendizado em:
-            Manutenção e interpretação de códigos utilizados em ELT/ELT.</p>
-        <p>Configuração e manuseio de diversos serviços cloud dentro da GCP.</p>
-        <p>Criação de consultas e suporte SQL para auxiliar o time de BI.</p>
-        <p>Desenvolvimento de endpoints utilizando Python utilizando a
-            biblioteca Requests para a conexão com API's de veículos de mídia,
-            tal como TikTok, Twitter, Pinterest, Google ADS.</p>
-        <p>Auxiliar no suporte a clientes, manutenção e configuração de contas,
-            monitoramento de serviços cloud e validação de integridade dos
-            dados.</p>
-        </p>
-    </section>
-    <section id="contato">
-        <h2>Contato</h2>
-        <p>Entre em contato comigo através do e-mail: rafael.nadalin@outlook.com
-        </p>
-        <p>ou do Celular: (41) 98413-5989</p>
-        <a href="/cv-rafael-nadalin.pdf" target="_blank">Currículo</a>
-    </section>
-    <footer>
-        <p>&copy; 2024 Rafael Nadalin</p>
-    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js">
+    </script>
+    <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js">
+    </script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
 </body>
 </html>
