@@ -12,8 +12,7 @@ body {
     justify-content: center;
 }
 
-
-  /* Conteúdo */
+/* Conteúdo */
 .content {
     display: flex;
     flex-direction: column;
@@ -54,7 +53,6 @@ body {
     background-repeat: no-repeat;
 }
 
-
 .navbar .navbar-nav .nav-link:hover {
     color: #7e57c2 !important;
     background-position: left bottom;
@@ -72,7 +70,6 @@ body {
 .navbar .navbar-nav .nav-link img {
     filter: brightness(0) invert(1); /* Ajusta a cor das imagens */
 }
-
 
 .container {
     width: 80%;
@@ -108,11 +105,12 @@ p {
 }
 
 .sobre {
-    display: flexbox;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 80vh;
-    margin-left: 0%;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
     margin-top: 100px;
 }
 
@@ -120,47 +118,42 @@ p {
     font-family: 'Peace Sans', sans-serif;
     font-weight: 900;
     letter-spacing: -6px;
-    font-size: 8em;
+    font-size: 5em;
     text-align: center;
-    margin: -5px;
-    line-height: 84px;
+    margin: 0;
 }
 
 .sobre p {
     font-weight: bold;
-    margin-left: 64px;
     margin-bottom: 12px;
-    line-height: 1;
-    word-wrap: break-word;
-    max-width: 400px;
+    line-height: 1.2;
+    max-width: 90%;
 }
 
 .sobre #tec {
-    float: right;
-    margin-right: 64px;
+    margin: 20px 0;
 }
 
 .sobre a {
-    float: right;
     margin-top: 20px;
-    margin-right: 8px;
 }
 
 .skills {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
     margin-top: 10px;
 }
 
 .skills span {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #ffffff;
 }
 
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .section {
@@ -212,28 +205,23 @@ p {
     color: #7e57c2;
     text-decoration: none;
     font-weight: bold;
-    
 }
 
 .project-link:hover {
     background-position: left bottom;
     transition: background-position 1s;
-    
-}
-
-.project-link:hover {
     text-decoration: underline;
 }
 
 .footer {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .sobre img {
     margin: 10px;
     transition: transform 0.3s;
-    width: 50px;
+    width: 40px;
 }
 
 .sobre img:hover {
@@ -268,11 +256,11 @@ p {
     }
 
     .container h2 {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .title-section h1 {
-        font-size: 4em;
+        font-size: 3em;
     }
 
     .title-section p {
@@ -280,32 +268,40 @@ p {
     }
 }
 
-
 @media (max-width: 768px) {
     .navbar {
-    flex-direction: column;
+        flex-direction: column;
     }
+
     .navbar-nav {
-    text-align: center;
+        text-align: center;
     }
+
     .content {
-    padding: 10px;
+        padding: 10px;
+    }
+
+    .sobre {
+        margin-top: 50px;
+    }
+
+    .skills {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
-
 @media (max-width: 576px) {
     .container {
-        padding-left: 15px;
-        padding-right: 15px;
+        padding: 0 15px;
     }
 
     .container h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .title-section h1 {
-        font-size: 2.5em;
+        font-size: 2em;
     }
 
     .title-section p {
@@ -318,5 +314,22 @@ p {
 
     footer {
         padding: 15px;
+    }
+
+    .skills span {
+        font-size: 0.8em;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .sobre h1 {
+        font-size: 3em;
+    }
+
+    .sobre p {
+        font-size: 0.9em;
     }
 }
