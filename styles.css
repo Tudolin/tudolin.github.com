@@ -12,29 +12,7 @@ body {
     justify-content: center;
 }
 
-.navbar-toggler {
-    background-color: #7e57c2;
-    border-color: #7e57c2;
-    transition: background-color 0.3s ease;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2878, 57, 194, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-    transition: transform 0.3s ease;
-}
-
-.navbar-toggler.collapsed .navbar-toggler-icon {
-    transform: rotate(0deg);
-}
-
-.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
-    transform: rotate(90deg);
-}
-
-.collapse {
-    transition: height 0.3s ease;
-    overflow: hidden;
-}
+/* Conteúdo */
 .content {
     display: flex;
     flex-direction: column;
@@ -51,6 +29,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.navbar-toggler {
+    background-color: #7e57c2; /* Cor de fundo do botão */
+    border-color: #7e57c2; /* Cor da borda do botão */
+    transition: background-color 0.3s ease; /* Animação de transição */
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%2878, 57, 194, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    transition: transform 0.3s ease; /* Animação de transição */
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    transform: rotate(0deg); /* Ícone padrão */
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    transform: rotate(90deg); /* Ícone rotacionado quando expandido */
+}
+
+/* Animação para o menu */
+.collapse {
+    transition: height 0.3s ease;
+    overflow: hidden; /* Garantir que o conteúdo não transborde */
 }
 
 @font-face {
