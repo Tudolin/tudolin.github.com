@@ -31,6 +31,7 @@ body {
     justify-content: center;
 }
 
+
 .navbar-toggler {
     background-color: #7e57c2; /* Cor de fundo do botão */
     border-color: #7e57c2; /* Cor da borda do botão */
@@ -72,16 +73,17 @@ body {
     font-family: 'Quicksand_Bold', sans-serif;
     color: #ffffff !important;
     cursor: pointer;
-    background-image: linear-gradient(to right, #7e57c2 33%,#0000 33% 66%,#7e57c2 66%);
-    background-position: right bottom;
-    background-size: 300% 2px;
+    background-image: linear-gradient(to right, #7e57c2 0%, #7e57c2 100%);
+    background-position: 50% 100%;
+    background-size: 0% 2px; /* Diminuir a altura da linha */
     background-repeat: no-repeat;
+    transition: background-size 0.3s, background-position 0.3s; /* Animação suave */
 }
 
 .navbar .navbar-nav .nav-link:hover {
-    color: #7e57c2 !important;
-    background-position: left bottom;
-    transition: background-position 1s;
+    color: #979797cc !important;
+    background-size: 60% 3px; /* Aumentar a largura da linha ao passar o mouse */
+    background-position: 50% 100%;
 }
 
 .navbar .navbar-nav .nav-link i {
