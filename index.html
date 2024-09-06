@@ -44,10 +44,8 @@
                 <span>GCP</span>
                 <span>PySpark</span>
                 <span>MongoDB</span>
-                <span>Flask</span>
                 <span>Pandas</span>
                 <span>Scipy</span>
-                <span>GitHub Actions</span>
                 <a href="https://www.linkedin.com/in/rafael-nadalin-68166722a/"><img
                         src="linkedin-logo.png" alt="LinkedIn" class="icon"
                         width="60px"></a>
@@ -57,186 +55,104 @@
         </div>
         <section id="projetos" class="section projects" data-aos="fade-up">
             <h2 class="section-title">Projetos <span>.</span></h2>
-            <div class="project">
-                <div class="project-info">
-                    <h3 class="project-title">ETL - Youtube Data Pipeline</h3>
-                    <p>Introdução:
-                        <br><br>
-                        Esse projeto tem o objetivo de realizar a
-                        extração, transformação e o carregamento de dados, estes
-                        extraidos do seu própio canal. Pra isto, utilizei a
-                        Youtube
-                        Analytics API e Google Cloud Console.
-                        <br><br>
-                        Objetivo do projeto:
-                        <br><br>
-                        Este projeto tem como objetivo a prática e o estudo de
-                        requisições em API, métodos de autenticação e construção
-                        de
-                        ETL.
-                        <br><br>
-                        Processo de Desenvolvimento:
-                        <br><br>
-                        Ao longo do projeto, tive como principais desafios a
-                        criação de
-                        um fluxo de autenticação para com a API do Youtube
-                        Analytics e a
-                        conta google. E tabém a criação de um fluxo de extração,
-                        pré
-                        padronização e salvamento dos dados por período
-                        (dias).<br>
-                        Foram utilizadas durante o desenvolvimento destre
-                        projeto
-                        algumas técnicas e tecnologias, foram estas o Python,
-                        GCP
-                        (Google Cloud Platform), Youtube Analytics API v2,
-                        Programação
-                        Orientada a objetos, RestAPI.<br>
-                        <br><br>
-                        Conclusão:
-                        <br><br>
-                        Graças a este projeto consegui compreender melhor o
-                        processo de autenticação Oauth2 e sobre o funcionamento
-                        de APIs para a extração de relatórios.
-                        <br>
-                        Pretendo futuramente adicionar novos conectore para a
-                        extração, também adicionar o AirFlow e subir na cloud
-                        para que seja executado de uma maneira independente no
-                        serviço de Computação em nuvem (GCP).
-                        <br><br>
-                    </p>
-                    <a href="https://github.com/Tudolin/gcp-pipeline"
-                        target="_blank" class="project-link">Link do código</a>
-                </div>
-            </div>
+        
             <div class="project" data-aos="fade-up">
                 <div class="project-info">
-                    <h3 class="project-title">Mesclagem de PDF's utilizando
-                        requisição HTTP's</h3>
-                    <p>Introdução:
-                        <br><br>
-                        Neste projeto, desenvolvemos uma aplicação web para
-                        mesclar
-                        arquivos PDF de forma eficiente e prática. A seguir,
-                        detalhamos
-                        o processo:
-                        <br><br>
-                        Objetivo do Projeto:
-                        <br><br>
-                        O objetivo principal deste projeto era criar uma
-                        aplicação da
-                        web que permitisse aos usuários mesclar múltiplos
-                        arquivos PDF
-                        em um único arquivo consolidado. A aplicação foi
-                        desenvolvida
-                        com a finalidade de fornecer uma solução fácil e rápida
-                        para a
-                        mesclagem de PDFs.
-                        <br><br>
-                        Processo de Desenvolvimento:
-                        <br><br>
-                        Configuração do Ambiente:
-                        Iniciamos configurando um ambiente de desenvolvimento
-                        que
-                        incluiu o uso do framework Flask para criação da
-                        aplicação web.
-                        Além disso, utilizamos bibliotecas Python, como PyPDF2,
-                        para
-                        processamento de PDF.
-                        <br><br>
-                        Interface do Usuário:
-                        Desenvolvemos uma interface do usuário amigável
-                        utilizando HTML,
-                        CSS e Bootstrap. Essa interface permitiu que os usuários
-                        interagissem com a aplicação de maneira simples e
-                        intuitiva. Os
-                        elementos da interface foram projetados de forma a
-                        proporcionar
-                        uma experiência de usuário fluida.
-                        <br><br>
-                        Validação de Arquivos de Entrada:
-                        Implementamos validações para garantir que os arquivos
-                        de
-                        entrada fossem de fato arquivos PDF. Também limitamos o
-                        número
-                        de arquivos a serem mesclados, permitindo de 2 a 7
-                        arquivos, com
-                        o objetivo de manter a qualidade do resultado. Essas
-                        validações
-                        foram aplicadas para garantir a integridade dos
-                        processos.
-                        <br><br>
-                        Mesclagem de PDFs:
-                        Utilizamos a biblioteca PyPDF2 para mesclar os arquivos
-                        PDF
-                        selecionados. Isso envolveu a extração de páginas de
-                        cada
-                        arquivo e a criação de um único arquivo PDF consolidado.
-                        O
-                        processo de mesclagem ocorreu no servidor, garantindo a
-                        segurança dos arquivos do usuário.
-                        <br><br>
-                        Requisições HTTP:
-                        A aplicação web utilizou requisições HTTP para interagir
-                        com o
-                        servidor. Quando os usuários selecionaram os arquivos
-                        PDF e um
-                        nome para o arquivo final, uma requisição POST foi
-                        enviada ao
-                        servidor, que processou os arquivos e forneceu o arquivo
-                        PDF
-                        mesclado para download. O processo de requisição e
-                        resposta foi
-                        implementado de forma eficaz, garantindo a usabilidade
-                        da
-                        aplicação.
-                        <br><br>
-                        Download do Arquivo Mesclado:
-                        Disponibilizamos a opção de download para que os
-                        usuários
-                        pudessem obter o arquivo PDF mesclado de forma simples.
-                        Após a
-                        mesclagem, o arquivo final foi disponibilizado como um
-                        link para
-                        download direto. Essa funcionalidade tornou o resultado
-                        final
-                        acessível aos usuários.
-                        <br><br>
-                        Conclusão:
-                        <br><br>
-                        Este projeto foi bem-sucedido em alcançar seus
-                        objetivos. Agora,
-                        os usuários podem facilmente mesclar vários arquivos PDF
-                        em um
-                        único arquivo com facilidade. A aplicação oferece uma
-                        interface
-                        de usuário intuitiva e eficaz, permitindo que a
-                        mesclagem de
-                        PDFs seja concluída com eficiência.
-                        <br><br>
-                        Além disso, este projeto destaca a aplicação de
-                        tecnologias da
-                        web e bibliotecas Python para resolver problemas
-                        práticos. A
-                        aplicação está pronta para uso e pode ser útil para
-                        profissionais e usuários que precisam consolidar
-                        documentos PDF
-                        de maneira rápida e simples.
-                        <br><br>
-                        No futuro, planejo aprimorar ainda mais a aplicação,
-                        adicionando recursos adicionais, como a capacidade de
-                        reorganizar páginas, para torná-la ainda mais versátil.
-                        Estamos
-                        abertos a contribuições e feedback da comunidade.
+                    <h3 class="project-title">ETL - Web Scraping Redesim</h3>
+                    <p> 
+                        <strong>Introdução:</strong>
+                        <br><br> 
+                        Este projeto visa automatizar a extração de dados do site da Redesim, monitorando o status de protocolos de licenças. A aplicação utiliza o Firebase para armazenar os resultados e enviar notificações por e-mail quando ocorrem mudanças.
+                        <br><br> 
+                        <strong>Objetivo do projeto:</strong>
+                        <br><br> 
+                        O objetivo principal é realizar a extração e processamento automatizado de dados por meio de web scraping, além de enviar alertas automáticos de atualização.
+                        <br><br> 
+                        <strong>Processo de Desenvolvimento:</strong>
+                        <br><br> 
+                        Os maiores desafios foram a configuração do scraping utilizando `BeautifulSoup` e `requests` para acessar os dados da Redesim e o envio de notificações com o `smtplib`. A integração com o Firebase permitiu o armazenamento eficiente dos dados. Tecnologias usadas: Python, Firebase, Google Cloud Platform, Web Scraping (BeautifulSoup e Requests), SMTP.
+                        <br><br> 
+                        <strong>Conclusão:</strong>
+                        <br><br> 
+                        O projeto aprimorou minhas habilidades em automação com web scraping e integração de APIs. Planejo futuramente implementar o Airflow para agendar o scraping na nuvem, além de melhorias como a adição de Docker.
                     </p>
-                    <a href="https://github.com/Tudolin/pdf-merger-app"
-                        target="_blank" class="project-link">Link do código</a>
-                    <a href="https://pdf-merger-app.onrender.com/"
-                        target="_blank" class="project-link">Link da
-                        aplicação</a>
+                    <a href="https://github.com/Tudolin/WebScrapingRedesim" target="_blank" class="project-link">Link do código</a>
                 </div>
             </div>
-        </section>
+        
+            <div class="project" data-aos="fade-up">
+                <div class="project-info">
+                    <h3 class="project-title">ETL - Youtube Data Pipeline</h3>
+                    <p>
+                        <strong>Introdução:</strong>
+                        <br><br> 
+                        Esse projeto tem o objetivo de realizar a extração, transformação e carregamento de dados extraídos do canal do Youtube, utilizando a Youtube Analytics API e Google Cloud Console.
+                        <br><br> 
+                        <strong>Objetivo do projeto:</strong>
+                        <br><br> 
+                        O foco foi praticar requisições API, métodos de autenticação e construção de um pipeline ETL.
+                        <br><br> 
+                        <strong>Processo de Desenvolvimento:</strong>
+                        <br><br> 
+                        Os desafios envolveram a criação de um fluxo de autenticação com a API do Youtube Analytics e a construção do pipeline de extração e padronização de dados. Foram utilizadas tecnologias como Python, GCP, Youtube Analytics API, Programação Orientada a Objetos e RestAPI.
+                        <br><br> 
+                        <strong>Conclusão:</strong>
+                        <br><br> 
+                        Consegui entender melhor o processo de autenticação OAuth2 e extração de relatórios via API. Pretendo adicionar o Airflow para automação na nuvem.
+                    </p>
+                    <a href="https://github.com/Tudolin/gcp-pipeline" target="_blank" class="project-link">Link do código</a>
+                </div>
+            </div>
+        
+            <div class="project" data-aos="fade-up">
+                <div class="project-info">
+                    <h3 class="project-title">ETL - Checklist Fácil</h3>
+                    <p> 
+                        <strong>Introdução:</strong>
+                        <br><br> 
+                        Este ETL foi desenvolvido para extrair informações da API do Checklist Fácil, focando na performance e reincidência de não conformidades.
+                        <br><br> 
+                        <strong>Objetivo do projeto:</strong>
+                        <br><br> 
+                        O objetivo é coletar, processar e armazenar dados de auditorias para facilitar o monitoramento de não conformidades.
+                        <br><br> 
+                        <strong>Processo de Desenvolvimento:</strong>
+                        <br><br> 
+                        Utilizei Python e a GCP para realizar a extração por meio de APIs, filtrando auditorias concluídas e identificando não conformidades. O processo foi automatizado com Cloud Scheduler e armazenado no Cloud Storage.
+                        <br><br> 
+                        <strong>Conclusão:</strong>
+                        <br><br> 
+                        O projeto melhorou minhas habilidades em automação e integração de APIs. Planejo otimizar o fluxo de dados e expandir as funcionalidades.
+                    </p>
+                    <a href="https://github.com/Tudolin/ChecklistFacilETL" target="_blank" class="project-link">Link do código</a>
+                </div>
+            </div>
+        
+            <div class="project" data-aos="fade-up">
+                <div class="project-info">
+                    <h3 class="project-title">Mesclagem de PDFs utilizando requisições HTTP</h3>
+                    <p>
+                        <strong>Introdução:</strong>
+                        <br><br> 
+                        Este projeto desenvolveu uma aplicação web para mesclar arquivos PDF de forma eficiente, utilizando Flask e PyPDF2.
+                        <br><br> 
+                        <strong>Objetivo do Projeto:</strong>
+                        <br><br> 
+                        Criar uma aplicação web que permita aos usuários mesclar múltiplos PDFs em um único arquivo consolidado.
+                        <br><br> 
+                        <strong>Processo de Desenvolvimento:</strong>
+                        <br><br> 
+                        Utilizei Flask para a interface web e PyPDF2 para a mesclagem de PDFs. Foram implementadas validações para garantir a integridade dos arquivos e a interface foi projetada com HTML, CSS e Bootstrap. O processo de mesclagem foi feito no servidor, garantindo segurança e eficiência.
+                        <br><br> 
+                        <strong>Conclusão:</strong>
+                        <br><br> 
+                        O projeto cumpriu os objetivos, permitindo a mesclagem de PDFs de forma fácil e rápida. Planejo adicionar recursos, como reorganização de páginas, para torná-lo ainda mais versátil.
+                    </p>
+                    <a href="https://github.com/Tudolin/pdf-merger-app" target="_blank" class="project-link">Link do código</a>
+                    <a href="https://pdf-merger-app.onrender.com/" target="_blank" class="project-link">Link da aplicação</a>
+                </div>
+            </div>
+        </section>        
         <section id="sobre" class="section about" data-aos="fade-up">
             <h2 class="section-title">Sobre <span>.</span></h2>
             <p>Atualmente trabalhando na Safe7 Consultoria Ambiental
@@ -249,38 +165,59 @@
             <p>🧳 Skils: Tratamento de dados, Rest API, Versionamento de código
                 (Git), CI/CD, Computação em nuvem, linux.</p>
         </section>
-        <section id="experiencias" class="section experiences"
-            data-aos="fade-up">
+        <section id="experiencias" class="section experiences" data-aos="fade-up">
             <h2 class="section-title">Experiências <span>.</span></h2>
+        
             <div class="experience">
-              <div class="experience-info">
-                <h3 class="experience-title">Mirum Agency -
-                    Estágiario em Engenharia de Dados</h3>
-                <h4 class="duration">2023</h4>
-                <p>Atuando como Estagiário em Engenharia de Dados</p>
-                <p>Manutenção e interpretação de códigos utilizados em ELT/ELT.</p>
-                <p>Configuração e manutenção de serviços cloud GCP.</p>
-                <p>Criação de consultas e suporte SQL para auxiliar o time de BI.</p>
-                <p>Desenvolvimento de endpoints utilizando Python para a conexão com API's de veículos de mídia, e extração e tratamento de reports, tais como TikTok, Twitter, Pinterest, Google ADS.</p>
-                <p>Auxiliar no suporte a clientes, manutenção e configuração de contas e monitoramento de serviços.</p>
+                <div class="experience-info">
+                    <h3 class="experience-title">
+                        <a target="_blank" href="https://www.mirumagency.com.br/">
+                            <img align="right" height="94px" width="94px" alt="Mirum" src="https://media.licdn.com/dms/image/C560BAQGyA1CtAMmQbg/company-logo_200_200/0/1630594517323/mirumsoutheurope_logo?e=2147483647&v=beta&t=AHQFHqerzaF5RYfu3vkuxNeJf66bGXAydFRqw7Aaolw"/>
+                        </a>
+                        Mirum Agency - Estagiário em Engenharia de Dados
+                    </h3>
+                    <h4 class="duration">2023</h4>
+                    <p>
+                        Durante meu estágio na Mirum Agency, atuei nas seguintes atividades:
+                        <br><br>
+                        - Manutenção e interpretação de códigos utilizados em processos de ELT/ETL.
+                        <br>
+                        - Configuração e manutenção de serviços na Google Cloud Platform (GCP).
+                        <br>
+                        - Desenvolvimento de consultas SQL e suporte ao time de BI.
+                        <br>
+                        - Criação de endpoints em Python para integração com APIs de veículos de mídia, como TikTok, Twitter, Pinterest e Google Ads, para extração e tratamento de relatórios.
+                        <br>
+                        - Suporte técnico a clientes, incluindo configuração e monitoramento de contas e serviços.
+                    </p>
+                </div>
             </div>
-            </div>
-            <div class="experience">
-                <section id="experiencias" class="section experiences"
-                    data-aos="fade-up">
-                    <div class="experience">
-                        <div class="experience-info">
-                            <h3 class="experience-title">Safe7 - Engenheiro de
-                                Dados JR</h3>
-                            <h4 class="duration">2024</h4>
-                            <p>Responsável por análisar o contexto de negócio e desenvolver soluções para máximizar a produtividade.</p>
-                            <p>Re-fatoração e modelagem de um novo banco de dados.</p>
-                            <p>Criação de ferramenta Web interna "Safe7 Toolkit", centralizando diversos processos e operando como visualizador e gerenciador de processos internos, como mapeamento e cadastro de contatos, automatização de processos e geração de relatórios de performance(KPI's).</p>
-                            <p>Desenvolvimento de pipeline ETL utilizando serviços providos pela GCP. Utilizando Python, web-scraping e API Rest.</p>
-                        </div>
-                    </div>
+        
+            <div class="experience" data-aos="fade-up">
+                <div class="experience-info">
+                    <h3 class="experience-title">
+                        <a target="_blank" href="https://safe7consultoria.com.br">
+                            <img align="right" height="94px" width="94px" alt="Safe7" src="https://safe7consultoria.com.br/wp-content/uploads/2020/03/logo-nova-1024x1024.png"/>
+                        </a>
+                        Safe7 - Engenheiro de Dados Jr.
+                    </h3>
+                    <h4 class="duration">2024</h4>
+                    <p>
+                        Como Engenheiro de Dados Jr. na Safe7, minhas principais responsabilidades incluem:
+                        <br><br>
+                        - Analisar o contexto de negócios e desenvolver soluções para maximizar a produtividade da equipe.
+                        <br>
+                        - Reestruturação e modelagem de um novo banco de dados, visando maior eficiência.
+                        <br>
+                        - Desenvolvimento da ferramenta web interna "Safe7 Toolkit", que centraliza processos como mapeamento de contatos, automação de tarefas e geração de relatórios de desempenho (KPIs).
+                        <br>
+                        - Criação de pipelines ETL utilizando serviços da GCP, integrando Python, web scraping e APIs REST para extração e tratamento de dados.
+                    </p>
+                </div>
             </div>
         </section>
+        
+        
         <section id="contato" class="section contact" data-aos="fade-up">
             <h2 class="section-title">Contato <span>.</span></h2>
             <p>Entre em contato comigo através do e-mail:
