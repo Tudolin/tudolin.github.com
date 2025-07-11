@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Rafael Nadalin</title>
+    <title>Rafael Nadalin's Portfolio</title>
     <link rel="icon" href="./favicon.png" type="image/png">
     <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -24,20 +24,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link"
-                            href="#projetos">Projetos</a></li>
+                            href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link"
-                            href="#experiencias">Experiências</a></li>
+                            href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link"
-                            href="#contato">Contato</a></li>
+                            href="#contact">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <div class="container fade-in" data-aos="fade-up">
-        <div class="sobre">
-            <p>Olá, me chamo Rafael Nadalin, tenho 21 anos, formado em Análise e
-                Desenvolvimento de Sistemas e esse é meu portfólio de</p>
-            <h1>ENGENHARIA DE DADOS</h1>
+        <div class="about">
+            <p>Hello, I'm Rafael Nadalin, 22 years old, graduated in Systems Analysis and Development and this is my</p>
+            <h1>DATA ENGINEERING PORTFOLIO</h1>
             <div class="skills">
                 <span>Python</span>
                 <span>SQL</span>
@@ -45,7 +44,7 @@
                 <span>PySpark</span>
                 <span>MongoDB</span>
                 <span>Pandas</span>
-                <span>Scipy</span>
+                <span>Docker</span>
                 <a href="https://www.linkedin.com/in/rafael-nadalin-68166722a/"><img
                         src="linkedin-logo.png" alt="LinkedIn" class="icon"
                         width="60px"></a>
@@ -53,54 +52,54 @@
                         alt="GitHub" class="icon" width="60px"></a>
             </div>
         </div>
-        <section id="projetos" class="section projects" data-aos="fade-up">
-            <h2 class="section-title">Projetos <span>.</span></h2>
+        <section id="projects" class="section projects" data-aos="fade-up">
+            <h2 class="section-title">Projects <span>.</span></h2>
         
             <div class="project" data-aos="fade-up">
                 <div class="project-info">
-                    <h3 class="project-title">ETL - Web Scraping Redesim</h3>
+                    <h3 class="project-title">ETL - Redesim Web Scraping</h3>
                     <p> 
-                        <strong>Introdução:</strong>
+                        <strong>Introduction:</strong>
                         <br><br> 
-                        Este projeto visa automatizar a extração de dados do site da Redesim, monitorando o status de protocolos de licenças. A aplicação utiliza o Firebase para armazenar os resultados e enviar notificações por e-mail quando ocorrem mudanças.
+                        This project automates data extraction from the Redesim website, monitoring license protocol statuses. The application uses Firebase to store results and send email notifications when changes occur.
                         <br><br> 
-                        <strong>Objetivo do projeto:</strong>
+                        <strong>Project Goal:</strong>
                         <br><br> 
-                        O objetivo principal é realizar a extração e processamento automatizado de dados por meio de web scraping, além de enviar alertas automáticos de atualização.
+                        The main objective is to perform automated data extraction and processing through web scraping, along with sending automatic update alerts.
                         <br><br> 
-                        <strong>Processo de Desenvolvimento:</strong>
+                        <strong>Development Process:</strong>
                         <br><br> 
-                        Os maiores desafios foram a configuração do scraping utilizando `BeautifulSoup` e `requests` para acessar os dados da Redesim e o envio de notificações com o `smtplib`. A integração com o Firebase permitiu o armazenamento eficiente dos dados. Tecnologias usadas: Python, Firebase, Google Cloud Platform, Web Scraping (BeautifulSoup e Requests), SMTP.
+                        The main challenges were configuring the scraping using `BeautifulSoup` and `requests` to access Redesim data and implementing email notifications with `smtplib`. Firebase integration enabled efficient data storage. Technologies used: Python, Firebase, Google Cloud Platform, Web Scraping (BeautifulSoup and Requests), SMTP.
                         <br><br> 
-                        <strong>Conclusão:</strong>
+                        <strong>Conclusion:</strong>
                         <br><br> 
-                        O projeto aprimorou minhas habilidades em automação com web scraping e integração de APIs. Planejo futuramente implementar o Airflow para agendar o scraping na nuvem, além de melhorias como a adição de Docker.
+                        The project enhanced my skills in automation with web scraping and API integration. Future plans include implementing Airflow for cloud scheduling and adding Docker containers.
                     </p>
-                    <a href="https://github.com/Tudolin/WebScrapingRedesim" target="_blank" class="project-link">Link do código</a>
+                    <a href="https://github.com/Tudolin/WebScrapingRedesim" target="_blank" class="project-link">View Code</a>
                 </div>
             </div>
         
             <div class="project" data-aos="fade-up">
                 <div class="project-info">
-                    <h3 class="project-title">ETL - Youtube Data Pipeline</h3>
+                    <h3 class="project-title">ETL - YouTube Data Pipeline</h3>
                     <p>
-                        <strong>Introdução:</strong>
+                        <strong>Introduction:</strong>
                         <br><br> 
-                        Esse projeto tem o objetivo de realizar a extração, transformação e carregamento de dados extraídos do canal do Youtube, utilizando a Youtube Analytics API e Google Cloud Console.
+                        This project performs extraction, transformation, and loading of data from YouTube channels using YouTube Analytics API and Google Cloud Console.
                         <br><br> 
-                        <strong>Objetivo do projeto:</strong>
+                        <strong>Project Goal:</strong>
                         <br><br> 
-                        O foco foi praticar requisições API, métodos de autenticação e construção de um pipeline ETL.
+                        The focus was practicing API requests, authentication methods, and building an ETL pipeline.
                         <br><br> 
-                        <strong>Processo de Desenvolvimento:</strong>
+                        <strong>Development Process:</strong>
                         <br><br> 
-                        Os desafios envolveram a criação de um fluxo de autenticação com a API do Youtube Analytics e a construção do pipeline de extração e padronização de dados. Foram utilizadas tecnologias como Python, GCP, Youtube Analytics API, Programação Orientada a Objetos e RestAPI.
+                        Challenges included creating an authentication flow with YouTube Analytics API and building the data extraction and standardization pipeline. Technologies used: Python, GCP, YouTube Analytics API, Object-Oriented Programming, and RestAPI.
                         <br><br> 
-                        <strong>Conclusão:</strong>
+                        <strong>Conclusion:</strong>
                         <br><br> 
-                        Consegui entender melhor o processo de autenticação OAuth2 e extração de relatórios via API. Pretendo adicionar o Airflow para automação na nuvem.
+                        I gained deeper understanding of OAuth2 authentication and API report extraction. Future plans include adding Airflow for cloud automation.
                     </p>
-                    <a href="https://github.com/Tudolin/gcp-pipeline" target="_blank" class="project-link">Link do código</a>
+                    <a href="https://github.com/Tudolin/gcp-pipeline" target="_blank" class="project-link">View Code</a>
                 </div>
             </div>
         
@@ -108,71 +107,65 @@
                 <div class="project-info">
                     <h3 class="project-title">ETL - Checklist Fácil</h3>
                     <p> 
-                        <strong>Introdução:</strong>
+                        <strong>Introduction:</strong>
                         <br><br> 
-                        Este ETL foi desenvolvido para extrair informações da API do Checklist Fácil, focando na performance e reincidência de não conformidades.
+                        This ETL extracts information from Checklist Fácil API, focusing on performance and non-compliance recurrence.
                         <br><br> 
-                        <strong>Objetivo do projeto:</strong>
+                        <strong>Project Goal:</strong>
                         <br><br> 
-                        O objetivo é coletar, processar e armazenar dados de auditorias para facilitar o monitoramento de não conformidades.
+                        The objective is to collect, process, and store audit data to facilitate non-compliance monitoring.
                         <br><br> 
-                        <strong>Processo de Desenvolvimento:</strong>
+                        <strong>Development Process:</strong>
                         <br><br> 
-                        Utilizei Python e a GCP para realizar a extração por meio de APIs, filtrando auditorias concluídas e identificando não conformidades. O processo foi automatizado com Cloud Scheduler e armazenado no Cloud Storage.
+                        I used Python and GCP to perform API-based extraction, filtering completed audits and identifying non-conformities. The process was automated with Cloud Scheduler and stored in Cloud Storage.
                         <br><br> 
-                        <strong>Conclusão:</strong>
+                        <strong>Conclusion:</strong>
                         <br><br> 
-                        O projeto melhorou minhas habilidades em automação e integração de APIs. Planejo otimizar o fluxo de dados e expandir as funcionalidades.
+                        The project improved my automation and API integration skills. Future plans include optimizing data flow and expanding functionalities.
                     </p>
-                    <a href="https://github.com/Tudolin/ChecklistFacilETL" target="_blank" class="project-link">Link do código</a>
+                    <a href="https://github.com/Tudolin/ChecklistFacilETL" target="_blank" class="project-link">View Code</a>
                 </div>
             </div>
         
             <div class="project" data-aos="fade-up">
                 <div class="project-info">
-                    <h3 class="project-title">Aplicação web - Sistema de RPG</h3>
+                    <h3 class="project-title">Web Application - RPG System</h3>
                     <p>
-                        <strong>Introdução:</strong>
+                        <strong>Introduction:</strong>
                         <br><br> 
-                        A ideia surgiu de um hobby e a dificuldade de encontrar um sistema de RPG online que fosse da maneira que eu idealizei.
+                        The idea came from a hobby and the difficulty of finding an online RPG system that matched my vision.
                         <br><br> 
-                        <strong>Objetivo do Projeto:</strong>
+                        <strong>Project Goal:</strong>
                         <br><br> 
-                        Neste projeto, tive como objetivo construir uma aplicação web com o foco em realizar sessões de RPG online, criação de personagens e sistema de habilidades.
+                        The goal was to build a web application focused on hosting online RPG sessions, character creation, and skill systems.
                         <br><br> 
-                        <strong>Processo de Desenvolvimento:</strong>
+                        <strong>Development Process:</strong>
                         <br><br> 
-                        Para realizar o desenvolvimento, foi necessário utilizar as rotas Flask da aplicação, banco de dados MongoDB Atlas para armazenar as informações de classes, inimigos, habilidades, etc. GCP onde o projeto está hospedado em uma VM e Cloud Storage para armazenar os arquivos dos jogadores, websockets para atualização dos eventos em tempo real, JS para manipular o que estava sendo recebido e enviado pelo backend.
+                        Development required Flask application routes, MongoDB Atlas for storing class, enemy, and skill information, GCP for VM hosting and Cloud Storage for player files, websockets for real-time event updates, and JavaScript for backend communication.
                         <br><br> 
-                        <strong>Conclusão:</strong>
+                        <strong>Conclusion:</strong>
                         <br><br> 
-                        O projeto foi um grande desafio para mim, onde, durante todo o desenvolvimento estive em constante processo de aprendizado, aprendendo sobre FrontEnd, sockets, sessões, manipulação de dados, SSL, NGINX.
-                        Contudo, fico extremamente feliz em ter conseguido tornar esse projeto funcional.
+                        This project was a significant challenge that involved constant learning about FrontEnd, sockets, sessions, data manipulation, SSL, and NGINX. I'm extremely happy to have made it functional.
                         <br><br>
-                        <strong>Acesso para teste: </strong>
-                        Caso queira acessar o site para testar, criar seu personagem e adentrar a uma sessão, aqui esta uma credencial de testes.
+                        <strong>Test Access: </strong>
+                        If you'd like to test the site, create your character and join a session, here are test credentials.
                         <br>
-                        <strong>Login : </strong>teste
-                        <strong>Senha : </strong>teste
+                        <strong>Login: </strong>test
+                        <strong>Password: </strong>test
                     </p>
-                    <a href="https://familyrpg.servebeer.com/" target="_blank" class="project-link">Link da aplicação</a>
+                    <a href="https://familyrpg.servebeer.com/" target="_blank" class="project-link">View Application</a>
                 </div>
             </div>
         </section>        
-        <section id="sobre" class="section about" data-aos="fade-up">
-            <h2 class="section-title">Sobre <span>.</span></h2>
-            <p>Atualmente trabalhando na Safe7 Consultoria Ambiental
-                como Engenheiro de Dados JR</p>
-            <p>Formado como Analista de Sistemas, atualmente atuando como
-                Engenheiro de Dados focado em evoluir e me especializar em Cloud
-                Data Engineer.</p>
-            <p>💼 Ferramentas: Python, MySQL, MongoDB, GCP, Spark, Flask,
-                Pandas, Scipy, GitHub Actions.</p>
-            <p>🧳 Skils: Tratamento de dados, Rest API, Versionamento de código
-                (Git), CI/CD, Computação em nuvem, linux.</p>
+        <section id="about" class="section about" data-aos="fade-up">
+            <h2 class="section-title">About <span>.</span></h2>
+            <p>Currently working at WPP Media Services as a Data Engineer</p>
+            <p>Graduated in Systems Analysis, currently working as a Data Engineer focused on evolving and specializing in Cloud Data Engineering.</p>
+            <p>💼 Tools: Python, SQL, GCP, PySpark, Docker, MySQL, MongoDB, Flask, Pandas, GitHub Actions.</p>
+            <p>🧳 Skills: Data processing, Rest API, Code versioning (Git), CI/CD, Cloud computing, Linux.</p>
         </section>
-        <section id="experiencias" class="section experiences" data-aos="fade-up">
-            <h2 class="section-title">Experiências <span>.</span></h2>
+        <section id="experience" class="section experiences" data-aos="fade-up">
+            <h2 class="section-title">Experience <span>.</span></h2>
         
             <div class="experience">
                 <div class="experience-info">
@@ -180,21 +173,21 @@
                         <a target="_blank" href="https://www.mirumagency.com.br/">
                             <img align="right" height="94px" width="94px" alt="Mirum" src="https://media.licdn.com/dms/image/C560BAQGyA1CtAMmQbg/company-logo_200_200/0/1630594517323/mirumsoutheurope_logo?e=2147483647&v=beta&t=AHQFHqerzaF5RYfu3vkuxNeJf66bGXAydFRqw7Aaolw"/>
                         </a>
-                        Mirum Agency - Estagiário em Engenharia de Dados
+                        Mirum Agency - Data Engineering Intern
                     </h3>
                     <h4 class="duration">2023</h4>
                     <p>
-                        Durante meu estágio na Mirum Agency, atuei nas seguintes atividades:
+                        During my internship at Mirum Agency, I worked on:
                         <br><br>
-                        - Manutenção e interpretação de códigos utilizados em processos de ELT/ETL.
+                        - Maintenance and interpretation of codes used in ETL/ELT processes
                         <br>
-                        - Configuração e manutenção de serviços na Google Cloud Platform (GCP).
+                        - Configuration and maintenance of Google Cloud Platform (GCP) services
                         <br>
-                        - Desenvolvimento de consultas SQL e suporte ao time de BI.
+                        - SQL query development and BI team support
                         <br>
-                        - Criação de endpoints em Python para integração com APIs de veículos de mídia, como TikTok, Twitter, Pinterest e Google Ads, para extração e tratamento de relatórios.
+                        - Python endpoint creation for media API integration (TikTok, Twitter, Pinterest, Google Ads)
                         <br>
-                        - Suporte técnico a clientes, incluindo configuração e monitoramento de contas e serviços.
+                        - Client technical support including account configuration and service monitoring
                     </p>
                 </div>
             </div>
@@ -205,34 +198,55 @@
                         <a target="_blank" href="https://safe7consultoria.com.br">
                             <img align="right" height="94px" width="94px" alt="Safe7" src="https://safe7consultoria.com.br/wp-content/uploads/2020/03/logo-nova-1024x1024.png"/>
                         </a>
-                        Safe7 - Engenheiro de Dados Jr.
+                        Safe7 - Junior Data Engineer
                     </h3>
                     <h4 class="duration">2024</h4>
                     <p>
-                        Como Engenheiro de Dados Jr. na Safe7, minhas principais responsabilidades incluem:
+                        As a Junior Data Engineer at Safe7, my main responsibilities included:
                         <br><br>
-                        - Analisar o contexto de negócios e desenvolver soluções para maximizar a produtividade da equipe.
+                        - Business context analysis and solution development to maximize team productivity
                         <br>
-                        - Reestruturação e modelagem de um novo banco de dados, visando maior eficiência.
+                        - Database restructuring and modeling for greater efficiency
                         <br>
-                        - Desenvolvimento da ferramenta web interna "Safe7 Toolkit", que centraliza processos como mapeamento de contatos, automação de tarefas e geração de relatórios de desempenho (KPIs).
+                        - Development of internal web tool "Safe7 Toolkit" centralizing processes
                         <br>
-                        - Criação de pipelines ETL utilizando serviços da GCP, integrando Python, web scraping e APIs REST para extração e tratamento de dados.
+                        - ETL pipeline creation using GCP services with Python, web scraping and REST APIs
+                    </p>
+                </div>
+            </div>
+
+            <div class="experience" data-aos="fade-up">
+                <div class="experience-info">
+                    <h3 class="experience-title">
+                        <a target="_blank" href="https://www.linkedin.com/company/wpp-media-services">
+                            <img align="right" height="94px" width="94px" alt="WPP" src="https://media.licdn.com/dms/image/v2/D4D0BAQFXOWXbO-XlhA/company-logo_200_200/company-logo_200_200/0/1721999015833/wpp_media_services_logo?e=2147483647&v=beta&t=knUP6R_bgcfQvrr2m6cRqjAYZHJMV1xKK-QWCb9ZAcA"/>
+                        </a>
+                        WPP Media Services - Data Engineer
+                    </h3>
+                    <h4 class="duration">2024 - Present</h4>
+                    <p>
+                        As a Data Engineer at WPP Media Services, my responsibilities include:
+                        <br><br>
+                        - Developing and optimizing data pipelines in cloud environments (GCP)
+                        <br>
+                        - Automating data ingestion, transformation and storage processes (ETL/ELT)
+                        <br>
+                        - Monitoring and performing preventive maintenance on pipelines
+                        <br>
+                        - Collaborating with cross-functional teams to implement data-driven solutions
                     </p>
                 </div>
             </div>
         </section>
         
-        
-        <section id="contato" class="section contact" data-aos="fade-up">
-            <h2 class="section-title">Contato <span>.</span></h2>
-            <p>Entre em contato comigo através do e-mail:
-                rafael.nadalin@outlook.com</p>
-            <p>ou do Celular: (41) 98413-5989</p>
+        <section id="contact" class="section contact" data-aos="fade-up">
+            <h2 class="section-title">Contact <span>.</span></h2>
+            <p>Reach me via email: rafael.nadalin@outlook.com</p>
+            <p>or Phone: +55 (41) 98413-5989</p>
             <button class="btn btn-outline-info"><a
                     href="/cv-rafael-nadalin.pdf" target="_blank"
                     class="footer-link"
-                    style="text-decoration: none; color: white;">Currículo</a></button>
+                    style="text-decoration: none; color: white;">Download Resume</a></button>
         </section>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
